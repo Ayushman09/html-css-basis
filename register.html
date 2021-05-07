@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your Paintboard</title>
+    <link rel="stylesheet" href="assignment.css">
+    
+</head>
+<body>
+    <div class="div1">
+        <img src="side_cover.jpg"/>
+
+    <ul class="l1">
+        <li class="li1"><a href="index.html"><img id="org_logo"  src="logo.png"></a></li>
+    </ul>
+    
+    <h1 id="heading1"><strong> Get ready to start your free trial </strong></h1>
+    <label id="ltrial">Join 12,000 product makers already practicing Product Excellence.</label>
+    <div class="">
+    <button type="button" style="background-color: white;" id="button1"><strong>Sign Up with Google </strong></button>
+    <img src="Glogo.png" id="google_icon" />
+    </div>
+    </div>
+    <br>
+    <h5>---------Or use Email---------</h5>
+ <div class="square">
+    <form id="registerform" onsubmit="return ValidateEmail(document.registerform.Email)">
+        <div>
+        <label class="label1" id="eml" for="email">Work Email </label>
+        <br>
+        <input class="inputs" type="text" id="Email" placeholder=" john@company.com" required>
+        </div>
+        <br>
+        <button id="button3"><b>Sign Up </b></button>
+
+        </div>
+    </form>
+        <div class="div4">
+            <label id="label4" for="link2">Already have an account?</label>
+            <a id="slink" href="index.html">Sign In</a>
+            <br>
+            <label id="label5">By signing up, you agree to our <u>Terms of Service</u> and  <u>Privacy Policy</u>.</label>
+        </div>
+
+<script type="text/javascript">
+    function ValidateEmail(inputEmail) {
+        console.log("working");
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (inputEmail.value.match(mailformat)) {
+            return true;
+        } else {
+            alert("You have entered an invalid email address!");
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>
