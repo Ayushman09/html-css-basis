@@ -2,12 +2,11 @@
     width: 300px;
     height: 100px;
     margin-top: 80px;
-    margin-left: 250;
+    margin-left: 110px;
 }
 
 img{
     float: right;
-    margin-top: 0;
     width: 40%;
     height: 1000px;
 }
@@ -20,7 +19,7 @@ li {
 #heading1{
     
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 240px;
     color: rgb(15, 11, 9);
     font-style:bold;
     font-weight: 100;
@@ -28,16 +27,19 @@ li {
 
 #label5{
     opacity: 0.5;
+    margin-left: 90px;
 }
 
 #button1{
-    margin-left: 150px;
-    margin-top: 50px;
+    border:1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    margin-left: 240px;
+    margin-top: 40px;
     text-align: center;
-    height: 4em;
-    width: 35em;
-    opacity: 0.7;
-    color: rgb(83, 81, 81);
+    height: 3.5em;
+    width: 30em;
+    color: gray;
     cursor: pointer;
 
 }
@@ -50,7 +52,7 @@ li {
     
 }
 #ltrial {
-    margin-left: 150px;
+    margin-left: 240px;
 }
 
 #rem{
@@ -59,13 +61,13 @@ li {
 }
 
 #google_icon{
-    height: 40px;
-    width:40px;
+    height: 30px;
+    width:30px;
     position: absolute;
     left:1px;
     font-size: 4em;
-    margin-top: 55px;
-    margin-left: 175px;
+    margin-top: 47px;
+    margin-left: 255px;
     margin-bottom: 20px;
     cursor: pointer;
     opacity: 0.7;
@@ -78,24 +80,28 @@ li {
     margin-top: 40px;
     background-color: blue;
     color: azure;
+    cursor: pointer;
 }
 .pass-box{
     position: relative;
 }
 
-.labels{
+.label1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     margin-top: 0;
     opacity: 0.5;
 }
 #label4{
     opacity: 0.6;
     margin-top: 40px;
+    margin-left: 90px;
     
 }
 ::placeholder{
     font-style: italic;
     right: 20px;
-    font-size: 25px;
+    font-size: 15px;
     opacity: 0.6;
 }
 .div4{
@@ -103,19 +109,19 @@ li {
     margin-left: 150px;
 }
 h5{
-    margin-left: 300px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 350px;
     opacity: 0.5;
-    
     color: rgb(94, 88, 88);
 }
 form{
-    margin-left: 145px;
+    margin-left: 240px;
     margin-top: 20px;
 }
 .link1{
-    margin-left: 230px;
+    margin-left: 150px;
     opacity:0.35;
-    color: grey;
+    color: rgb(58, 47, 47);
 }
 .link1:hover{
     color: blueviolet;
@@ -130,12 +136,14 @@ input:focus{
     border-color:blue; 
 }
 .inputs{
+    border: 1px solid rgb(92, 89, 89);
+    border-radius: 6px;
     box-sizing: border-box;
     text-align: left;
     font-size: 1em;
     margin-top: 10px;
-    width: 15em;
-    height: 2em;
+    width: 12.5em;
+    height: 1.5em;
     font-size: 2em;
     opacity: 0.3;
 }

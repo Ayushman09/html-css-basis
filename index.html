@@ -6,43 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paintboard : Login </title>
     <link rel="stylesheet" href="assignment.css">
+    <link rel="icon" type="image/png" href="favicon.jpeg">
     
 </head>
 <body>
     <div class="div1">
         <img src="side_cover.jpg"/>
-
-    <ul class="l1">
+    <ul class="l1" style="margin-top: -15;">
         <li class="li1"><a href="#"><img id="org_logo"  src="logo.png"></a></li>
     </ul>
     
     <h1 id="heading1"><strong> Sign In to your Paintboard </strong></h1>
-    <div class="">
+    <div class="gsign">
     <button type="button" style="background-color: white;" id="button1"><strong>Sign in with Google </strong></button>
     <img src="Glogo.png" id="google_icon" />
     </div>
     </div>
     <br>
-    <h5>---------Or use Email---------</h5>
+    <h5 style="font-size: 12px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">---------Or use Email---------</h5>
  <div class="square">
-    <form id="loginform" method="POST">
-        <div >
+    <form id="loginform">
+        <div>
         <label class="label1" for="email">Work Email: </label>
         <br>
-        <input class="inputs" class="form-control" type="text" id="Email" placeholder=" john@company.com" required>
+        <input class="inputs" class="form-control" type="text" id="email" placeholder=" john@company.com" required>
         </div>
         <br>
         <div class="form-group pass-box">
-        <label class="label1" for="pass">Password: </label>
+        <label class="label1" for="pswd">Password: </label>
         <div class="ips">
-        <input class="inputs"  id="pwd" type="password"  placeholder=" Password" required>
+        <input class="inputs"  id="pswd" type="password"  placeholder=" Password" required>
         </div>
         <br>
         <input type="checkbox" name="remember me" id="rem_check" value="remember"/>
         <label id="rem" for="c1">Remember Me </label>
         <a class="link1" href="#">Forgot Password</a>
         <br>
-        <button id="button3" type="submit" onsubmit="validateEmail(), checkPassword()">Log In </button>
+        <button id="button3" onclick="validateEmail();"><strong>Log Me In </strong></button>
 
         </div>
     </form>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create your Paintboard</title>
     <link rel="stylesheet" href="assignment.css">
+    <link rel="icon" type="image/png" href="back-button.png">
     
 </head>
 <body>
@@ -26,11 +27,11 @@
     <br>
     <h5>---------Or use Email---------</h5>
  <div class="square">
-    <form id="registerform" onsubmit="return ValidateEmail(document.registerform.Email)">
+    <form id="registerform">
         <div>
         <label class="label1" id="eml" for="email">Work Email </label>
         <br>
-        <input class="inputs" type="text" id="Email" placeholder=" john@company.com" required>
+        <input class="inputs" type="text" id="email" placeholder=" john@company.com" required>
         </div>
         <br>
         <button id="button3"><b>Sign Up </b></button>
@@ -45,16 +46,18 @@
         </div>
 
 <script type="text/javascript">
-    function ValidateEmail(inputEmail) {
-        console.log("working");
-        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if (inputEmail.value.match(mailformat)) {
-            return true;
-        } else {
-            alert("You have entered an invalid email address!");
-            return false;
-        }
+    function validateEmail() {
+    let inputEmail = document.getElementById("Email").value;
+    console.log(inputEmail);
+    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (inputEmail.value.match(mailformat)) {
+        alert("Email: Good to go!");
+        return true;
+    } else {
+        alert("Email: invalid email address!");
+        return false;
     }
+}
 </script>
 
 </body>
