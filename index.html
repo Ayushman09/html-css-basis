@@ -25,7 +25,7 @@
     <br>
     <h5 style="font-size: 12px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">---------Or use Email---------</h5>
  <div class="square">
-    <form id="loginform">
+    <form>
         <div>
         <label class="label1" for="email">Work Email: </label>
         <br>
@@ -42,7 +42,7 @@
         <label id="rem" for="c1">Remember Me </label>
         <a class="link1" href="#">Forgot Password</a>
         <br>
-        <button id="button3" onclick="validateEmail();"><strong>Log Me In </strong></button>
+        <button id="button3" onclick="validateEmail(),checkPassword()"><strong>Log Me In </strong></button>
 
         </div>
     </form>

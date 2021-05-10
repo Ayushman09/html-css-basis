@@ -2,7 +2,7 @@ function validateEmail() {
     var inputEmail = document.getElementById("email").value;
     console.log(inputEmail);
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (inputEmail.value.match(mailformat)) {
+    if (inputEmail.match(mailformat)) {
         alert("Email: Good to go!");
         //return true;
     } else {
@@ -15,7 +15,7 @@ function checkPassword() {
     var inputPassword = document.getElementById("pswd").value;
     console.log("Working");
     var valid = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
-    if (inputPassword.value.match(valid)) {
+    if (inputPassword.match(valid)) {
         alert("Password: Good to go!");
         //return true;
     } else {

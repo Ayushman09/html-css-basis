@@ -29,12 +29,12 @@
  <div class="square">
     <form id="registerform">
         <div>
-        <label class="label1" id="eml" for="email">Work Email </label>
+        <label class="label1" id="eml">Work Email </label>
         <br>
         <input class="inputs" type="text" id="email" placeholder=" john@company.com" required>
         </div>
         <br>
-        <button id="button3"><b>Sign Up </b></button>
+        <button id="button3" onclick="validateEmail()"><b>Sign Up </b></button>
 
         </div>
     </form>
@@ -47,15 +47,15 @@
 
 <script type="text/javascript">
     function validateEmail() {
-    let inputEmail = document.getElementById("Email").value;
+    let inputEmail = document.getElementById("email").value;
     console.log(inputEmail);
     let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (inputEmail.value.match(mailformat)) {
+    if (inputEmail.match(mailformat)) {
         alert("Email: Good to go!");
-        return true;
+        //return true;
     } else {
         alert("Email: invalid email address!");
-        return false;
+        //return false;
     }
 }
 </script>
